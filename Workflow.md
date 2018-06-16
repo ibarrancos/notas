@@ -99,6 +99,8 @@ Estos inconvenientes que presenta Jenkins, se subsanarían todos configurando y 
 
 Esta decisión permitiría integrar en el mismo flujo de trabajo las aplicaciones desarrolladas en [cualquier lenguaje de programación](https://docs.gitlab.com/ee/ci/examples/), aunque para ello se requiere de la instalación de [gitlab-runers con docker](gitlab-runer.md) en el entorno de la CARM.
 
+Aún no tengo claro cómo integrar GitLab-CI con Nexus, porque me niego a instalar y configurar un servidor Nexus en casa: Podría servir como inspiración [https://www.unix-experience.fr/gitlab/gitlab_ci_maven_pipeline/](https://www.unix-experience.fr/gitlab/gitlab_ci_maven_pipeline/) en conjunción con los *Environment* de GitLab-CI y la limitación en ```.gitlab-ci.yml``` de a qué ramas se aplica.
+
 
 ## Gestión de Tickets
 
@@ -159,7 +161,7 @@ El resumen que global de todo podríamos encontrarlo [en este artículo](https:/
 
 1. Recomendaciones de cuántas ramas como mínimo debe haber por proyecto
 2. Cómo deben nombrarse las ramas
-3. Cómo deben escribirse los commits.
+3. Cómo deben escribirse los commits (Inspiración: [https://ed.team/blog/el-mensaje-de-commit-ideal-en-git](https://ed.team/blog/el-mensaje-de-commit-ideal-en-git)).
 4. Qué documentos mínimos deben escribirse y qué deben recoger: ```README.md```, ```CONTRIBUTING.md```, ```LICENSE.md```
 5. Cuándo deben realizarse MergeRequest y cómo nombrarse.
 
